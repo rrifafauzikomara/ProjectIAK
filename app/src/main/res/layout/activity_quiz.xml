@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soal"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/hello"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img1"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/hello"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/img3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/hello"
+        android:layout_marginRight="40dp"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/img4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img3"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/hello"
+        android:layout_marginLeft="40dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        android:text="Questions" />
+
+    <ImageView
+        android:id="@+id/soalGambar"
+        android:layout_width="3500dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/soal"
+        android:layout_centerHorizontal="true"
+        android:alpha="100"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/jb"/>
+
+    <EditText
+        android:id="@+id/txtjawab"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/soalGambar"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnJawab"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/soalGambar"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/txtjawab"
+        android:text="Jawab"/>
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text=""
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/Point"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        android:text="" />
+
+</RelativeLayout>
